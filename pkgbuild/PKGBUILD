@@ -1,0 +1,15 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=blackbird-settings-sddm
+pkgver=1.0
+pkgrel=1
+pkgdesc="SDDM default settings for Blackbird OS."
+arch=('any')
+url='https://github.com/blackbird-os/blackbird-settings-sddm'
+license=('GPL')
+
+package() {
+  cd ../..
+  cp -aR etc $pkgdir/
+}
