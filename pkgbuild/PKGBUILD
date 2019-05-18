@@ -8,6 +8,7 @@ pkgdesc="SDDM default settings for Blackbird OS."
 arch=('any')
 url='https://github.com/blackbird-os/blackbird-settings-sddm'
 license=('GPL')
+backup=('etc/sddm.conf')
 
 package() {
   cd ../..
